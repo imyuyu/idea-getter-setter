@@ -1,0 +1,66 @@
+<idea-plugin url="https://github.com/smile962464/idea-getter-setter">
+    <id>idea-getter-setter</id>
+    <name>idea-getter-setter</name>
+    <version>1.0</version>
+    <vendor email="2075904@qq.com" url="https://github.com/smile962464">smile962464</vendor>
+
+    <description><![CDATA[
+
+    ]]></description>
+
+    <change-notes><![CDATA[<html>
+<html>
+  <b>1.0</b> (04/05/2017)
+  <ul>
+    <li>New: <a href="https://github.com/syllant/idea-plugin-remotesynchronizer/issues/8">New option "Synchronize on save"</a>
+  </ul>
+</html>]]>
+    </change-notes>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="133.193"/>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
+
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
+
+    <actions>
+        <!--<action class="com.hipac.hq.GenerateGSAction" id="generateGSDoc" text="generateGSDoc" >
+            <add-to-group group-id="GenerateGroup" anchor="last" />
+        </action>-->
+        <!-- Add your actions here -->
+        <group id="GenerateAccessortActions" text="Generate accessort" popup="true">
+            <action id="GenerateAccessort.GenerateGetterAction"
+                    class="org.lanyu.idea.plugin.generateaccessort.actions.GenerateGetterAction"
+                    text="Generate Getter"
+                    description="Do generate getter">
+            </action>
+            <action id="GenerateAccessort.GenerateSetterAction"
+                    class="org.lanyu.idea.plugin.generateaccessort.actions.GenerateSetterAction"
+                    text="Generate Setter"
+                    description="Do generate setter">
+            </action>
+            <action id="GenerateAccessort.GenerateAccessortAction"
+                    class="org.lanyu.idea.plugin.generateaccessort.actions.GenerateAccessortAction"
+                    text="Generate All"
+                    description="Do generate getter and setter">
+            </action>
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </group>
+    </actions>
+
+</idea-plugin>
