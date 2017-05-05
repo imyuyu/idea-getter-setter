@@ -80,7 +80,7 @@ public final class GenerateUtil {
                 }
                 psiClass.add(method);
             }
-            if (GENERATE_ALL.equals(type)) {
+            if (GENERATE_ALL.equals(type) || GENERATE_Accessort.equals(type)) {
                 methodText.append(generateGetter(field));
                 method = elementFactory.createMethodFromText(methodText.toString(), psiClass);
                 //如果方法已经存在，就不再插入

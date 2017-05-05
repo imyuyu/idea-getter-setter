@@ -39,9 +39,10 @@
     </project-components>
 
     <actions>
-        <!--<action class="com.hipac.hq.GenerateGSAction" id="generateGSDoc" text="generateGSDoc" >
-            <add-to-group group-id="GenerateGroup" anchor="last" />
-        </action>-->
+        <action class="org.lanyu.idea.plugin.generateaccessort.actions.GenerateAccessortAction"
+                id="GenerateAccessort.GenerateALLAction" text="Generate Accessort">
+            <add-to-group group-id="GenerateGroup" anchor="first"/>
+        </action>
         <!-- Add your actions here -->
         <group id="GenerateAccessortActions" text="Generate accessort" popup="true">
             <action id="GenerateAccessort.GenerateGetterAction"

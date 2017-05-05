@@ -22,6 +22,7 @@ public final class Constants {
      * 构建全部
      */
     public static final String GENERATE_ALL = "Generate All";
+    public static final String GENERATE_Accessort = "Generate Accessort";
 
 
     /**
